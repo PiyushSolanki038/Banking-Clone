@@ -1,0 +1,8 @@
+.settings-content {
+  padding: 20px;
+}
+
+.form-check-input:checked {
+  background-color: #e41e26;
+  border-color: #e41e26;
+}

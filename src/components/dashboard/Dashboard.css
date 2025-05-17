@@ -1,0 +1,86 @@
+.dashboard-container {
+  padding: 20px;
+}
+
+.welcome-message {
+  font-size: 14px;
+  color: #666;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 15px 20px;
+}
+
+.card-footer {
+  background-color: #fff;
+  border-top: 1px solid #e0e0e0;
+  padding: 15px 20px;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  font-weight: 500;
+  color: #666;
+  border-top: none;
+  background-color: #f8f9fa;
+}
+
+.table td, .table th {
+  padding: 12px 15px;
+  vertical-align: middle;
+  border-color: #e0e0e0;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #e41e26 !important;
+}
+
+.btn-link {
+  color: #e41e26;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #c41a21;
+  text-decoration: underline;
+}
+
+a {
+  color: #e41e26;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c41a21;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+  
+  .table td, .table th {
+    padding: 10px;
+  }
+}

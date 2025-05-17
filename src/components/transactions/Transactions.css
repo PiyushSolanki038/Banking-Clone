@@ -1,0 +1,167 @@
+.transactions-container {
+  padding: 20px;
+}
+
+.welcome-message {
+  font-size: 14px;
+  color: #666;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 15px 20px;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  font-weight: 500;
+  color: #666;
+  border-top: none;
+  background-color: #f8f9fa;
+}
+
+.table td, .table th {
+  padding: 12px 15px;
+  vertical-align: middle;
+  border-color: #e0e0e0;
+}
+
+.text-success {
+  color: #28a745 !important;
+}
+
+.text-danger {
+  color: #e41e26 !important;
+}
+
+.btn-link {
+  color: #e41e26;
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #c41a21;
+  text-decoration: underline;
+}
+
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .transactions-container {
+    padding: 10px;
+  }
+  
+  .table td, .table th {
+    padding: 10px;
+  }
+}
+
+.filter-section {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.transaction-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+  color: #495057;
+}
+
+.transaction-table td, .transaction-table th {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.category-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.category-badge.income {
+  background-color: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.category-badge.utilities {
+  background-color: rgba(23, 162, 184, 0.1);
+  color: #17a2b8;
+}
+
+.category-badge.shopping {
+  background-color: rgba(255, 193, 7, 0.1);
+  color: #ffc107;
+}
+
+.category-badge.food {
+  background-color: rgba(253, 126, 20, 0.1);
+  color: #fd7e14;
+}
+
+.category-badge.transport {
+  background-color: rgba(111, 66, 193, 0.1);
+  color: #6f42c1;
+}
+
+.category-badge.healthcare {
+  background-color: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.pagination .page-link {
+  color: var(--primary-color);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: white;
+}
+
+.btn-link {
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .transactions-container {
+    padding: 10px;
+  }
+  
+  .transaction-table td, .transaction-table th {
+    padding: 10px;
+  }
+}

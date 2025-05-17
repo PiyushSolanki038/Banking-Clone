@@ -1,0 +1,203 @@
+.home-container {
+  overflow-x: hidden;
+}
+
+/* Header Styles */
+.home-header {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.home-logo {
+  height: 50px;
+}
+
+.home-header h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.home-header .text-primary {
+  color: #e41e26 !important;
+}
+
+.home-header .lead {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #e41e26;
+  border-color: #e41e26;
+}
+
+.btn-primary:hover {
+  background-color: #c41a21;
+  border-color: #c41a21;
+}
+
+.btn-outline-primary {
+  color: #e41e26;
+  border-color: #e41e26;
+}
+
+.btn-outline-primary:hover {
+  background-color: #e41e26;
+  color: white;
+}
+
+/* Features Section */
+.features-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.feature-card {
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #e41e26;
+  margin-bottom: 20px;
+}
+
+.feature-card h5 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* Offers Section */
+.offers-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+.offer-item {
+  margin-bottom: 20px;
+  padding-left: 20px;
+  border-left: 3px solid #e41e26;
+}
+
+.offer-item h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.offer-item p {
+  color: #666;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.testimonial-card {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.testimonial-content {
+  margin-bottom: 20px;
+}
+
+.testimonial-content p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial-author h6 {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+/* Footer */
+.home-footer {
+  padding: 60px 0 30px;
+  background-color: #333;
+  color: #fff;
+}
+
+.footer-logo {
+  height: 40px;
+}
+
+.footer-links {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #e41e26;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .home-header {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .home-header h1 {
+    font-size: 2.2rem;
+  }
+  
+  .features-section,
+  .offers-section,
+  .testimonials-section,
+  .cta-section {
+    padding: 60px 0;
+  }
+}

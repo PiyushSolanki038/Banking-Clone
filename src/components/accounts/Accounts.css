@@ -1,0 +1,15 @@
+.accounts-content {
+  padding: 20px;
+}
+
+.account-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.account-value {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0;
+}

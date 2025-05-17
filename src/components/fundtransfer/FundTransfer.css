@@ -1,0 +1,18 @@
+.fund-transfer-content {
+  padding: 20px;
+}
+
+.btn-danger {
+  background-color: #e41e26;
+  border-color: #e41e26;
+}
+
+.btn-outline-danger {
+  color: #e41e26;
+  border-color: #e41e26;
+}
+
+.btn-outline-danger:hover {
+  background-color: #e41e26;
+  color: white;
+}

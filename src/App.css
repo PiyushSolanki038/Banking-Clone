@@ -36,3 +36,272 @@
     transform: rotate(360deg);
   }
 }
+
+:root {
+  --primary-color: #e41e26;
+  --secondary-color: #f8f9fa;
+  --text-color: #333;
+  --border-color: #e0e0e0;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+  --info-color: #17a2b8;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f7fa;
+  color: var(--text-color);
+}
+
+/* App Layout */
+/* Main container */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Main content area */
+.main-content {
+  flex: 1;
+  margin-left: 250px; /* This should match the sidebar width */
+  transition: margin-left 0.3s;
+  width: calc(100% - 250px); /* Ensure content width accounts for sidebar */
+  overflow-x: hidden;
+}
+
+/* For mobile view */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* Content wrapper inside main content */
+.content-wrapper {
+  padding: 20px;
+  min-height: calc(100vh - 60px); /* Subtract navbar height */
+  background-color: #f8f9fa;
+}
+
+/* When user is not logged in, show full width */
+.w-100 {
+  width: 100% !important;
+  margin-left: 0 !important;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex: 1;
+  padding: 20px;
+  background-color: #f5f7fa;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  border-right: 1px solid var(--border-color);
+  padding: 20px 0;
+}
+
+.sidebar-header {
+  padding: 0 20px;
+}
+
+.sidebar-content {
+  padding: 0 10px;
+}
+
+.sidebar .nav-link {
+  color: var(--text-color);
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.sidebar .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sidebar .nav-link.active {
+  background-color: rgba(228, 30, 38, 0.1);
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.sidebar-divider {
+  border-top: 1px solid var(--border-color);
+}
+
+.sidebar-heading {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Navbar */
+.navbar {
+  padding: 10px 20px;
+}
+
+.search-container {
+  width: 300px;
+}
+
+.navbar .nav-link {
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+/* Dashboard */
+.dashboard-content {
+  padding: 20px;
+}
+
+.welcome-message {
+  font-size: 14px;
+  color: #666;
+}
+
+.card {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: #fff;
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 20px;
+}
+
+.card-body {
+  padding: 15px 20px;
+}
+
+.card-footer {
+  background-color: #fff;
+  border-top: 1px solid var(--border-color);
+  padding: 15px 20px;
+}
+
+/* Table */
+.table {
+  margin-bottom: 0;
+}
+
+.table th {
+  font-weight: 500;
+  color: #666;
+  border-top: none;
+  background-color: #f8f9fa;
+}
+
+.table td, .table th {
+  padding: 12px 15px;
+  vertical-align: middle;
+  border-color: var(--border-color);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #c41a21;
+  border-color: #c41a21;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.btn-link:hover {
+  color: #c41a21;
+  text-decoration: underline;
+}
+
+/* Text colors */
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+/* Links */
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #c41a21;
+  text-decoration: underline;
+}
+
+/* Badges */
+.badge {
+  font-weight: 500;
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+}
+
+.badge-new {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .sidebar {
+    width: 60px;
+  }
+  
+  .sidebar .nav-link span {
+    display: none;
+  }
+  
+  .sidebar-header {
+    text-align: center;
+  }
+  
+  .sidebar .nav-link {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .sidebar .nav-link i {
+    margin-right: 0;
+    font-size: 1.25rem;
+  }
+  
+  .content-wrapper {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    width: 100%;
+  }
+}

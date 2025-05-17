@@ -1,0 +1,25 @@
+.cards-content {
+  padding: 20px;
+}
+
+.card-icon {
+  font-size: 2rem;
+  color: #e41e26;
+}
+
+.card-number {
+  color: #666;
+  font-size: 14px;
+}
+
+.detail-label {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.detail-value {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
